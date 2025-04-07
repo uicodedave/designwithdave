@@ -8,9 +8,9 @@ import "animate.css";
 import Quote from "../public/quotee.svg";
 import Doodle from "../public/doodle.png";
 import Me from "../public/me.svg";
-import LinkedIn from "../public/frame43.svg";
-import Behance from "../public/frame42.svg";
-import Mail from "../public/frame44.svg";
+import LinkedIn from "../public/linkedinn.svg";
+import Behance from "../public/behance.svg";
+import Mail from "../public/mail.svg";
 import Whatsapp from "../public/Whatsapp.svg";
 import {
   SiAdobeillustrator,
