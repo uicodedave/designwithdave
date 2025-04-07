@@ -38,10 +38,11 @@ const projects = [
       "A food ordering and meal management system designed for hospitals, enabling seamless patient meal tracking and delivery.",
     imageUrl: RMR,
     liveLink:
-      "https://www.figma.com/proto/JS9HAM0Fg9KS790YorQx5W/RMR-Food-App?page-id=0%3A1&node-id=5-489",
+      "https://www.figma.com/proto/JS9HAM0Fg9KS790YorQx5W/RMR-Food-App?page-id=0%3A1&node-id=5-489&p=f&viewport=-36%2C-2624%2C0.23&t=sthpmxb1diMuRqBD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5%3A606&show-proto-sidebar=1",
     caseStudyLink:
-      "https://www.figma.com/proto/JS9HAM0Fg9KS790YorQx5W/RMR-Food-App?page-id=356%3A2083&node-id=356-2162",
+      "https://www.figma.com/proto/JS9HAM0Fg9KS790YorQx5W/RMR-Food-App?page-id=356%3A2083&node-id=356-2162&p=f&viewport=401%2C179%2C0.02&t=YfwimwC7xYscYUiC-1&scaling=min-zoom&content-scaling=fixed",
   },
+
   {
     id: 4,
     type: "UI/UX",
@@ -50,12 +51,23 @@ const projects = [
       "An AI-powered email and WhatsApp campaign automation platform, optimized for multilingual support and real-time analytics.",
     imageUrl: Zmyte,
     liveLink:
-      "https://www.figma.com/proto/JS9HAM0Fg9KS790YorQx5W/RMR-Food-App?page-id=0%3A1&node-id=5-489",
+     "https://www.figma.com/proto/DGUV5pCL60PDN8kBXSoDUK/Zmyte?page-id=0%3A1&node-id=179-1459&p=f&viewport=362%2C-82%2C0.17&t=nNhbJOMX80n6xvJM-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=28%3A408&show-proto-sidebar=1",
     caseStudyLink:
-      "https://www.figma.com/proto/DGUV5pCL60PDN8kBXSoDUK/Zmyte?page-id=609%3A4185&node-id=611-7079",
+      "https://www.figma.com/proto/DGUV5pCL60PDN8kBXSoDUK/Zmyte?page-id=609%3A4185&node-id=611-7079&p=f&viewport=313%2C45%2C0.02&t=CCC8noKSvaUrZmwd-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=611%3A7079",
   },
+
   {
     id: 5,
+    type: "UI/UX",
+    title: "LinkMyte",
+    description:
+      "An NFC-based digital business card solution that eliminates the need for physical cards, allowing seamless networking.",
+    imageUrl: Linkmyte,
+    liveLink:
+     "https://www.figma.com/proto/UPUS8Eza6WfdCmtExxyOuA/LinkMyte-Customer-App?page-id=1219%3A18361"
+  },
+  {
+    id: 6,
     type: "UI/UX",
     title: "Brilliante Car Wash App",
     description:
@@ -65,16 +77,6 @@ const projects = [
       "https://www.figma.com/proto/WiGpab2GdJ5MHRnma0R0gj/Untitled?page-id=0%3A1&node-id=126-842",
   },
   {
-    id: 6,
-    type: "UI/UX",
-    title: "LinkMyte",
-    description:
-      "An NFC-based digital business card solution that eliminates the need for physical cards, allowing seamless networking.",
-    imageUrl: Linkmyte,
-    liveLink:
-      "https://www.figma.com/proto/UPUS8Eza6WfdCmtExxyOuA/LinkMyte-Customer-App?page-id=1219%3A18361",
-  },
-  {
     id: 7,
     type: "UI/UX",
     title: "RushRoom Rental App",
@@ -82,7 +84,7 @@ const projects = [
       "A rental booking platform that provides a smooth user experience for both short-term and long-term accommodations.",
     imageUrl: Rushrooms,
     liveLink:
-      "https://www.figma.com/proto/UPUS8Eza6WfdCmtExxyOuA/LinkMyte-Customer-App?page-id=1219%3A18361",
+      "https://www.figma.com/proto/ofivgmecbeDWgiscwaQR1u/Untitled?page-id=0%3A1",
   },
   {
     id: 8,
@@ -118,7 +120,6 @@ function Work() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10">My Work</h2>
 
-        {/* Filters */}
         <div className="flex justify-center gap-4 flex-wrap mb-10">
           {filters.map((category) => (
             <button
@@ -135,36 +136,33 @@ function Work() {
           ))}
         </div>
 
-        {/* Projects Grid */}
         <div className="grid justify-center gap-y-8 md:grid-cols-2 md:gap-x-4 md:px-6 px-2 py-8 lg:grid-cols-4">
           {filteredProjects.map((project) => (
-            <a
-              href={project.liveLink}
+            <div
               key={project.id}
-              target="_blank"
-              rel="noreferrer"
+              className="border border-[#B8B9BB] rounded-2xl py-4 px-4 shadow-md hover:shadow-lg transition-shadow flex flex-col h-full items-start"
             >
-              <div className="border border-[#B8B9BB] rounded-2xl py-4 px-4  shadow-md hover:shadow-lg transition-shadow flex flex-col h-full items-start">
-                <div className="w-full h-40 relative mb-2">
-                  <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="pt-4 flex-grow flex flex-col items-start gap-y-1">
-                  <h2 className="text-zinc-800 text-[14px] md:text-base font-semibold">
-                    {project.title}
-                  </h2>
-                  <p className="text-stone-500 text-[12px] md:text-sm font-medium">
-                    {project.type}
-                  </p>
-                  <p className="text-gray-600 text-[12px]  md:text-sm leading-snug mt-1">
-                    {project.description}
-                  </p>
-                </div>
-                <div className="flex flex-col gap-y-1 mt-2">
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full h-40 relative mb-2 block"
+              >
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+              </a>
+              <div className="pt-4 flex-grow flex flex-col items-start gap-y-1">
+                <h2 className="text-zinc-800 text-[14px] md:text-[16px] font-semibold">
+                  {project.title}
+                </h2>
+                <p className="text-gray-700 text-[12px] md:text-[14px]">
+                  {project.description}
+                </p>
+                <div className="mt-2 flex gap-4">
                   <a
                     className="text-blue-600 text-[12px] md:text-sm font-medium hover:underline"
                     href={project.liveLink}
@@ -175,7 +173,7 @@ function Work() {
                   </a>
                   {project.caseStudyLink && (
                     <a
-                      className="text-[#011638]  text-[12px] md:text-sm font-medium hover:underline"
+                      className="text-blue-600 text-[12px] md:text-sm font-medium hover:underline"
                       href={project.caseStudyLink}
                       target="_blank"
                       rel="noreferrer"
@@ -185,7 +183,7 @@ function Work() {
                   )}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
