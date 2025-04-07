@@ -39,7 +39,7 @@ function Navbar() {
   }, []);
 
   const navLinkClass = (id) =>
-    `font-medium text-sm md:text-base cursor-pointer transition-colors ${
+    `font-medium text-[14px] md:text-base cursor-pointer transition-colors ${
       activeSection === id ? 'text-[#0D21A1]' : 'text-[#141414]'
     }`;
 

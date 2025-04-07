@@ -32,7 +32,7 @@ export default function Home() {
       {/* Home Section */}
       <section
         id="home"
-        className="h-screen bg-[#EEF0F2] pb-18 flex flex-col gap-y-24 md:flex-row items-center justify-center text-[#141414] px-6 py-12 md:py-0 relative overflow-hidden"
+        className="h-screen bg-[#EEF0F2] flex flex-col gap-y-24 md:flex-row items-center justify-center text-[#141414] px-6 py-4  md:py-12  relative overflow-hidden"
       >
         {/* Doodle Image */}
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0 animate__animated animate__fadeInLeft animate__delay-1s">
@@ -53,10 +53,13 @@ export default function Home() {
             counts.
           </p>
           <Image
-            className="absolute text-black right-24 transform -translate-x-1/2 w-40 sm:w-40 md:w-60 animate__animated animate__rotateIn animate__delay-4s"
-            src={Quote}
-            alt="Quote"
-          />
+  className="absolute w-60 animate__animated animate__rotateIn animate__delay-4s 
+    left-1/2 -translate-x-1/2 
+    md:left-auto md:right-12 md:translate-x-0"
+  src={Quote}
+  alt="Quote"
+/>
+
         </div>
       </section>
 
@@ -84,17 +87,17 @@ export default function Home() {
             </p>
             <div className="flex justify-center md:justify-start gap-x-4 py-4">
             <a href="http://www.linkedin.com/in/ayantoye-david-64615b249/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVMzu4kN%2FRnG8gi3XOhFrKg%3D%3D" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={LinkedIn} alt="linkedin" />
+                <Image className="w-[40px]" src={LinkedIn} alt="linkedin" />
               </a>        
              
               <a href="https://www.behance.net/ayantoyedavid" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Behance} alt="behance" />
+                <Image className="w-[40px]" src={Behance} alt="behance" />
               </a>
               <a href="mailto:uicodedave@gmail.com" className="text-white">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Mail} alt="email" />
+                <Image className="w-[40px]" src={Mail} alt="email" />
               </a>
               <a href="https://wa.me/+2348144936800" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Whatsapp} alt="whatsapp" />
+                <Image className="w-[40px]" src={Whatsapp} alt="whatsapp" />
               </a>
             </div>
           </div>
@@ -203,17 +206,17 @@ export default function Home() {
 <h1 className="text-[#141414] text-xl font-semibold">DesignwithDave</h1>
 <div className="flex justify-center md:justify-start gap-x-2 py-4">
 <a href="http://www.linkedin.com/in/ayantoye-david-64615b249/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVMzu4kN%2FRnG8gi3XOhFrKg%3D%3D" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={LinkedIn} alt="linkedin" />
+                <Image className="w-[40px]" src={LinkedIn} alt="linkedin" />
               </a>        
              
               <a href="https://www.behance.net/ayantoyedavid" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Behance} alt="behance" />
+                <Image className="w-[40px]" src={Behance} alt="behance" />
               </a>
               <a href="mailto:uicodedave@gmail.com" className="text-white">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Mail} alt="email" />
+                <Image className="w-[40px]" src={Mail} alt="email" />
               </a>
               <a href="https://wa.me/+2348144936800" target="_blank" rel="noopener noreferrer">
-                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Whatsapp} alt="whatsapp" />
+                <Image className="w-[40px]" src={Whatsapp} alt="whatsapp" />
               </a>
 </div>
       
