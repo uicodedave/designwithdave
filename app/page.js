@@ -8,7 +8,10 @@ import "animate.css";
 import Quote from "../public/quotee.svg";
 import Doodle from "../public/doodle.png";
 import Me from "../public/me.svg";
-
+import LinkedIn from "../public/frame43.svg";
+import Behance from "../public/frame42.svg";
+import Mail from "../public/frame44.svg";
+import Whatsapp from "../public/Whatsapp.svg";
 import {
   SiAdobeillustrator,
   SiAdobephotoshop,
@@ -81,17 +84,17 @@ export default function Home() {
             </p>
             <div className="flex justify-center md:justify-start gap-x-4 py-4">
             <a href="http://www.linkedin.com/in/ayantoye-david-64615b249/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVMzu4kN%2FRnG8gi3XOhFrKg%3D%3D" target="_blank" rel="noopener noreferrer">
-            <Image src="/frame 43.svg" alt="linkedin" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={LinkedIn} alt="linkedin" />
               </a>        
              
               <a href="https://www.behance.net/ayantoyedavid" target="_blank" rel="noopener noreferrer">
-              <Image src="/frame 42.svg" alt="behance" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Behance} alt="behance" />
               </a>
               <a href="mailto:uicodedave@gmail.com" className="text-white">
-              <Image src="/frame 44.svg" alt="email" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Mail} alt="email" />
               </a>
               <a href="https://wa.me/+2348144936800" target="_blank" rel="noopener noreferrer">
-              <Image src="/Whatsapp.svg" alt="whatsapp" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Whatsapp} alt="whatsapp" />
               </a>
             </div>
           </div>
@@ -200,17 +203,17 @@ export default function Home() {
 <h1 className="text-[#141414] text-xl font-semibold">DesignwithDave</h1>
 <div className="flex justify-center md:justify-start gap-x-2 py-4">
 <a href="http://www.linkedin.com/in/ayantoye-david-64615b249/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVMzu4kN%2FRnG8gi3XOhFrKg%3D%3D" target="_blank" rel="noopener noreferrer">
-            <Image src="/frame 43.svg" alt="linkedin" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={LinkedIn} alt="linkedin" />
               </a>        
              
               <a href="https://www.behance.net/ayantoyedavid" target="_blank" rel="noopener noreferrer">
-              <Image src="/frame 42.svg" alt="behance" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Behance} alt="behance" />
               </a>
               <a href="mailto:uicodedave@gmail.com" className="text-white">
-              <Image src="/frame 44.svg" alt="email" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Mail} alt="email" />
               </a>
               <a href="https://wa.me/+2348144936800" target="_blank" rel="noopener noreferrer">
-              <Image src="/Whatsapp.svg" alt="whatsapp" width={40} height={40} />
+                <Image className="w-[30px] sm:w-[35px] md:w-[40px]" src={Whatsapp} alt="whatsapp" />
               </a>
 </div>
       
