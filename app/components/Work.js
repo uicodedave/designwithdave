@@ -10,10 +10,19 @@ import Linkmyte from "../../public/Linkmyte.svg";
 import Rushrooms from "../../public/Rushrooms.svg";
 import All from "../../public/all.svg";
 import Ip from "../../public/ip.svg";
+import Bitetheory from "../../public/bitetheory.png";
 
 const projects = [
+
+ { id: 1,
+  type: "Graphic Design",
+  title: "Bite Theory",
+  description: "A food poster design that showcases food price and type of meal",
+  imageUrl: Bitetheory,
+  liveLink: "https://www.behance.net/gallery/223337985/Bite-Theory",
+},
   {
-    id: 1,
+    id: 2,
     type: "Graphic Design",
     title: "Vezto Haus",
     description: "Crafted a unique logo for a Clothing Brand.",
@@ -21,7 +30,7 @@ const projects = [
     liveLink: "https://www.behance.net/gallery/222882791/Vezto-Haus-Logo-Design",
   },
   {
-    id: 2,
+    id: 3,
     type: "Graphic Design",
     title: "NuttyBliss",
     description:
@@ -31,7 +40,7 @@ const projects = [
       "https://www.figma.com/proto/dzb4uJC2B8N2gzMrN1f816/Nutty-Bliss?page-id=0%3A1&node-id=3-150",
   },
   {
-    id: 3,
+    id: 4,
     type: "UI/UX",
     title: "RMR Food App",
     description:
@@ -44,7 +53,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     type: "UI/UX",
     title: "Zmyte Web App",
     description:
@@ -57,7 +66,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     type: "UI/UX",
     title: "LinkMyte",
     description:
@@ -67,7 +76,7 @@ const projects = [
      "https://www.figma.com/proto/UPUS8Eza6WfdCmtExxyOuA/LinkMyte-Customer-App?page-id=1219%3A18361"
   },
   {
-    id: 6,
+    id: 7,
     type: "UI/UX",
     title: "Brilliante Car Wash App",
     description:
@@ -77,7 +86,7 @@ const projects = [
       "https://www.figma.com/proto/WiGpab2GdJ5MHRnma0R0gj/Untitled?page-id=0%3A1&node-id=126-842",
   },
   {
-    id: 7,
+    id: 8,
     type: "UI/UX",
     title: "RushRoom Rental App",
     description:
@@ -87,7 +96,7 @@ const projects = [
       "https://www.figma.com/proto/ofivgmecbeDWgiscwaQR1u/Untitled?page-id=0%3A1",
   },
   {
-    id: 8,
+    id: 9,
     type: "Fullstack",
     title: "All In Car",
     description:
@@ -96,7 +105,7 @@ const projects = [
     liveLink: "https://allincars-brown.vercel.app/",
   },
   {
-    id: 9,
+    id: 10,
     type: "Fullstack",
     title: "IP Address Tracker",
     description:
