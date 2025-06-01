@@ -150,12 +150,12 @@ export default function Home() {
           <h1 className="text-[#141414] font-semibold text-xl md:text-2xl">Education</h1>
           {[ 
             {
-              year: "2022 - 2023",
+            
               school: "Larva Coding Academy",
               title: "Certified Full time UI/UX Designer",
             },
             {
-              year: "2022 - 2023",
+            
               school: "Larva Coding Academy",
               title: "Certified Fullstack Developer",
             },
@@ -223,6 +223,9 @@ export default function Home() {
             </div>
       </div>
       </section>
+
+    
+
     </div>
   );
 }
